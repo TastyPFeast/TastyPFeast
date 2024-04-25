@@ -22,25 +22,29 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: column; /* Change to vertical layout */
     background-color: #cc242475;
     border: 10px ridge rgb(255, 0, 0);
     outline: 10px dotted rgb(201, 204, 43);
     padding: 10px;
+    width: auto;
+    height: auto; /* Occupy full viewport height */
 }
 
 .nav .logo1 {
-    height: 80px;
+    height: 70px;
     width: auto;
-    padding: 10px;
+    padding: 2px;
 }
 
 .title {
-    display: flex;
+    display: inline-flex;
     align-items: center;
 }
 
 .titletext {
     text-align: center;
+    margin-left: 5px;
     font-size: 35px;
     font-weight: 1000;
     color: #ffffff;
@@ -52,19 +56,18 @@ body {
 /* Main Content Styles */
 .main {
     background-color: #37000094;
-    width: auto;
     border: 10px ridge rgb(255, 0, 0);
-    margin: 0 10px; /* Adjusted margin size */
+    margin: 10px; /* Adjusted margin size */
     outline: 8px dotted #e5ff00;
+    flex-grow: 1; /* Occupy remaining vertical space */
 }
 
 .main ul {
-    overflow: hidden;
     list-style: none;
     text-align: center;
     margin: auto;
-    padding: 15px;
-    font-size: 18px;
+    padding: 10px;
+    font-size: 15px;
     text-shadow: 1px 3px rgb(255, 0, 0);
     font-weight: 1000;
     font-family: Arial;
@@ -72,6 +75,7 @@ body {
 
 .main li {
     display: inline-block;
+    width: auto;
 }
 
 .main a {
@@ -85,47 +89,6 @@ body {
     background-color: #ffee009d;
     color: rgb(0, 0, 0);
     transition: 1s;
-}
-
-/* Media Queries */
-/* Default styles */
-
-/* Adjustments for screens wider than a certain width */
-@media only screen and (min-width: 600px) {
-    .nav {
-        flex-direction: row; /* Revert to row layout for navigation on wider screens */
-    }
-
-    .title {
-        margin-bottom: 20px; /* Increase margin for title */
-    }
-
-    .main {
-        margin: 20px; /* Increase margin for main content */
-    }
-
-    body {
-        margin: 20px; /* Increase margin for body */
-    }
-
-/* Styles for smaller screens */
-@media only screen and (max-width: 599px) {
-    .nav {
-        flex-direction: column; /* Stack navigation items vertically for smaller screens */
-    }
-
-    .title {
-        margin-bottom: 10px; /* Decrease margin for title */
-    }
-
-    .main {
-        margin: 10px; /* Decrease margin for main content */
-    }
-
-    body {
-        margin: 10px; /* Decrease margin for body */
-    }
-}
 }
 
 #tables {
@@ -381,4 +344,20 @@ body {
     background-color: #e0bfbf98;
     color: rgb(0, 0, 0);
     transition: 1s;
+}
+
+/* Adjustments for smaller screens */
+@media screen and (max-width: 768px) {
+    /* Example styles */
+    .nav {
+        flex-direction: column;
+    }
+
+    .main ul {
+        flex-direction: column;
+    }
+
+    .main li {
+        margin-bottom: 10px;
+    }
 }

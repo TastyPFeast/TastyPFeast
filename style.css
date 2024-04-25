@@ -18,14 +18,16 @@ body {
 
 /* Navigation Styles */
 .nav {
-    display: flex;;
+    display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: column; /* Change to vertical layout */
     background-color: #cc242475;
     border: 10px ridge rgb(255, 0, 0);
     outline: 10px dotted rgb(201, 204, 43);
     padding: 10px;
     width: auto;
+    height: auto; /* Occupy full viewport height */
 }
 
 .nav .logo1 {
@@ -54,8 +56,9 @@ body {
 .main {
     background-color: #37000094;
     border: 10px ridge rgb(255, 0, 0);
-    margin: 0 10px; /* Adjusted margin size */
+    margin: 10px; /* Adjusted margin size */
     outline: 8px dotted #e5ff00;
+    flex-grow: 1; /* Occupy remaining vertical space */
 }
 
 .main ul {
@@ -185,6 +188,11 @@ body {
     outline: 10px dotted rgb(201, 204, 43);
 }
 
+.text{
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: justify;
+}
 .about1{
     background-color: #150846c5;
     font-weight: 1000;
@@ -299,8 +307,6 @@ body {
     border: 10px ridge #3700ff;
     text-shadow: 1px 3px rgb(25, 0, 255);
     text-align: justify;
-    margin-left: 100px;
-    margin-right: 100px;
 }
 
 .customerreview{
@@ -438,8 +444,10 @@ body {
     transition:1s;
 }
 
+
 .footer-contact {
     text-align: center;
+    margin-top: 20px; /* Added margin for spacing */
 }
 
 .footer-logo {
@@ -459,94 +467,80 @@ body {
     margin: 0 auto;
 }
 
+/* Style for the container */
 .cont1 {
-    background-color: #150846c5;
-    font-weight: 1000;
-    font-size: 20px;
-    text-align: center;
-    color: #ffffff;
-    font-family: Arial;
-    padding: 10px;
-    margin: 10px;
-    border: 10px ridge #3700ff;
-    text-shadow: 1px 3px rgb(25, 0, 255);
-    margin-left: 100px; /* Added 'px' unit */
-    margin-right: 100px; /* Added 'px' unit */
+    width: 100%;
+    max-width: 1000px; /* Adjust this value as needed */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Style for the rows */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+
+
+/* Style for the columns */
+.col {
+    flex: 1;
+    margin-right: 10%; /* Adjust spacing between columns */
+}
+
+.col2 {
+    flex: 1;
+    margin-left: 10%; /* Adjust spacing between columns */
 }
 
 .foot {
-    text-align: center;
-    font-size: 50px;
-    font-weight: 1000;
-    color: white;
-    text-shadow: 2px 4px rgb(25, 0, 255);
-    font-family: Arial;
-    margin-top: -10px; /* Added 'px' unit */
-}
-
-.Messageus{
     font-size: 20px;
-    font-family: Arial;
     font-weight: 1000;
-    text-shadow: 2px 4px rgb(255, 0, 0);
-    margin-top: -70px; /* Added 'px' unit */
+    color: yellow;
+    text-shadow: 1px 3px rgb(255, 0, 0); 
+    margin-bottom: 5px; 
+}
+/* Style for the Contact Us section */
+.Messageus {
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 1000;
+    
 }
 
 .socacc {
-    text-align: center;
-    font-size: 40px;
+    font-size: 20px;
     font-weight: 1000;
-    color: white;
-    text-shadow: 2px 4px rgb(25, 0, 255);
-    font-family: Arial;
-    margin-top: -10px; /* Added 'px' unit */
+    color: yellow;
+    text-shadow: 1px 3px rgb(255, 0, 0);  
 }
 
-.socmed {
-    margin-top: -30px; /* Added 'px' unit */
-}
-
-.socmed img {
-    height: 55px;
-    width: 55px;
-    max-width: fit-content;
-}
-
+/* Style for the Social Media section */
 .socmed ul {
-    overflow: hidden;
     list-style: none;
-    background-color: #ff000073;
-    text-align: center;
-    margin: auto;
-    padding: 20px;
-    border: 10px ridge rgb(0, 26, 255);
-    text-shadow: 1px 3px rgb(255, 0, 0);
-    border-radius: 100px;
-    font-family: Arial;
-    width: 300px;
-    outline: 5px dotted rgb(201, 204, 43);
+    padding: 0;
+    
 }
 
-.socmed li {
+.socmed ul li {
     display: inline-block;
+    margin-right: 20px; /* Adjust spacing between social media icons */
 }
 
-.socmed a {
-    text-decoration: none;
-    color: #fff;
-    padding: 100px 20px;
-    transition: background-color 1s;
+.socmed ul li a img {
+    width: 50px; /* Adjust the width of the social media icons */
+    height: auto;
+    padding: 5px;
+    background-color: #9b0505;
+    border-radius: 50px;
+    margin: 5%;
+    outline: 5px dotted rgb(201, 204, 43);
 }
 
 .socmed a:hover {
     background-color: #00d9ff9d;
-}
-
-.hrfoot {
-    width: 100%;
-    height: 1px;
-    background-color: white;
-    border: none;
 }
 
 .hrfoot1 {
@@ -556,43 +550,14 @@ body {
     border: none;
 }
 
-/* Responsive Styles */
-@media screen and (max-width: 320px) {
-    /* Styles for iPhone SE */
-    .main ul {
-        font-size: 14px;
-    }
-
-    .main a {
-        padding: 10px;
-    }
-
-    .about1, .reviewsection {
-        margin-left: 5px;
-        margin-right: 5px;
-    }
-}
-
-@media screen and (max-width: 414px) {
-    /* Styles for iPhone XR */
-    .main ul {
-        font-size: 16px;
-    }
-
-    .main a {
-        padding: 12px;
-    }
-
-    .about1, .reviewsection {
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-}
-
+/* Adjustments for smaller screens */
 @media screen and (max-width: 768px) {
-    /* Adjust styles for smaller screens */
+    /* Example styles */
+    .nav {
+        flex-direction: column;
+    }
+
     .main ul {
-        display: flex;
         flex-direction: column;
     }
 
@@ -600,29 +565,25 @@ body {
         margin-bottom: 10px;
     }
 
-    .scroll-container {
-        overflow-x: auto;
-        white-space: nowrap;
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: center;
+    /* Adjust font sizes */
+    .titletext {
+        font-size: 25px;
     }
 
-    .scroll-container .menu-item {
-        margin: 10px;
-    }
-
-    .scroll-container img {
-        width: 100%;
+    /* Make images responsive */
+    .image-container img {
+        max-width: 100%;
         height: auto;
     }
 
-    .about1, .reviewsection {
-        margin-left: 10px;
-        margin-right: 10px;
+    /* Example adjustment for spacing */
+    .menu-item {
+        margin: 10px 0;
     }
 
+    /* Example adjustment for footer */
     .footer-logo img {
-        max-width: 100%;
+        max-width: 80%;
     }
+
 }
