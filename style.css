@@ -1,0 +1,628 @@
+/* General Styles */
+html {
+    text-align: center;
+    font-family: Arial;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(to bottom, rgba(29, 1, 1, 0.856) 50%, rgba(22, 0, 0, 0.658) 100%), url(1BG.jpg) no-repeat fixed center;
+    height: 100%;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+/* Navigation Styles */
+.nav {
+    display: flex;;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #cc242475;
+    border: 10px ridge rgb(255, 0, 0);
+    outline: 10px dotted rgb(201, 204, 43);
+    padding: 10px;
+    width: auto;
+}
+
+.nav .logo1 {
+    height: 70px;
+    width: auto;
+    padding: 2px;
+}
+
+.title {
+    display: inline-flex;
+    align-items: center;
+}
+
+.titletext {
+    text-align: center;
+    margin-left: 5px;
+    font-size: 35px;
+    font-weight: 1000;
+    color: #ffffff;
+    font-family: Arial;
+    text-shadow: 1px 5px rgba(255, 0, 0, 0.849);
+    flex-grow: 1;
+}
+
+/* Main Content Styles */
+.main {
+    background-color: #37000094;
+    border: 10px ridge rgb(255, 0, 0);
+    margin: 0 10px; /* Adjusted margin size */
+    outline: 8px dotted #e5ff00;
+}
+
+.main ul {
+    list-style: none;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    font-size: 15px;
+    text-shadow: 1px 3px rgb(255, 0, 0);
+    font-weight: 1000;
+    font-family: Arial;
+}
+
+.main li {
+    display: inline-block;
+    width: auto;
+}
+
+.main a {
+    text-decoration: none;
+    color: #fff;
+    width: 100px;
+    padding: 15px 20px;
+}
+
+.main a:hover {
+    background-color: #ffee009d;
+    color: rgb(0, 0, 0);
+    transition: 1s;
+}
+
+
+.tagl{
+    background-color: #5e15158f;
+    margin: 10px;
+    color: #9b0505;
+    border: 10px ridge #ff0000;
+
+}
+
+.tagline {
+    font-size: 21px;
+    font-weight: 1000;
+    font-family: Arial;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 1px 4px rgb(0, 0, 0);
+    
+}
+
+.scroll-container {
+    font-family: Arial;
+    background-color: #ff000031;
+    overflow: auto;
+    white-space: nowrap;
+    border: 10px ridge #ff0000;   
+    padding: 10px;
+    margin: 10px;
+    
+  } 
+
+.scroll-container img {
+    padding:  1px;
+    height: 400;
+    width: 400;
+    transition: transform .2s;
+}
+
+.scroll-container img:hover {
+    width: 400px;
+    height: 400px;
+    overflow: visible;
+}
+
+.menu-item {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px; 
+}
+
+.image-container {
+    position: relative;
+    margin-bottom: 10px; 
+}
+
+.image-container img {
+    width: 300px;
+    height: 300px;
+    padding: 1px;
+    transition: transform .2s;
+    outline: 5px dotted rgb(25, 0, 255); 
+}
+
+.image-container img:hover {
+    width: 325px;
+    height: 325px;
+    color: rgb(0, 0, 0);
+    transition: .1s;
+}
+
+.menu-title {
+    margin-top: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #e5ff00;
+    text-align: center;
+    text-shadow: 1px 2px rgb(255, 0, 0);
+    background-color: #150846c5;
+    padding: 10px;
+    border-radius: 50px;
+    border: 5px ridge #3700ff;
+    outline: 5px dotted rgb(201, 204, 43); 
+}
+
+.about{
+    background-color: #150846c5;
+    font-weight: 1000;
+    font-size: 40;
+    font-family: Arial;
+    margin: 10px;
+    text-align: center;
+    color: #ffffff;
+    border: 10px ridge #3700ff;
+    margin: auto;
+    text-shadow: 1px 3px rgb(25, 0, 255);
+    outline: 10px dotted rgb(201, 204, 43);
+}
+
+.about1{
+    background-color: #150846c5;
+    font-weight: 1000;
+    font-size: auto;
+    text-align: justify;
+    color: #ffffff;
+    font-family: Arial;
+    padding: 10px;
+    margin: 10px;
+    border: 10px ridge #3700ff;
+    text-shadow: 1px 3px rgb(25, 0, 255);
+
+}
+
+.homeabout1 ul{
+    overflow: hidden;
+    list-style: none;
+    background-color: #ff000073;
+    text-align: center;
+    margin: auto;
+    padding: 15px;
+    border: 10px ridge rgb(0, 0, 0);
+    font-size: 20;
+    border-radius: 50px;
+    text-shadow: 1px 3px rgb(255, 0, 0); 
+    outline: 5px dotted rgb(201, 204, 43); 
+    font-weight: 1000;
+    font-family: Arial;
+    width: 25%;
+    
+}
+.homeabout1 li{    
+    display: inline-block;
+}
+
+.homeabout1 a{
+    text-decoration: none;
+    color: #fff;
+    padding: 15px;
+    
+}
+.homeabout1 a:hover {
+    background-color: #e0bfbf98;
+    color: rgb(0, 0, 0);
+    transition:1s;
+}
+
+.about1 .aboutuslogo {
+    display: flex;
+    height: 15%;
+    width: auto;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    border: 10px ridge #3700ff;
+    border-radius: 50px;
+    outline: 5px dotted rgb(201, 204, 43); 
+
+}
+
+.homecont1 ul{
+    overflow: hidden;
+    list-style: none;
+    background-color: #ff000073;
+    text-align: center;
+    margin: auto;
+    padding: 15px;
+    border: 10px ridge black;
+    font-size: 20;
+    text-shadow: 1px 3px rgb(255, 0, 0); 
+    outline: 10px dotted rgb(201, 204, 43); 
+    font-weight: 1000;
+    font-family: Arial;
+    width: 190px;
+    
+}
+.homecont1 li{    
+    display: inline-block;
+}
+
+.homecont1 a{
+    text-decoration: none;
+    color: #ffffff;
+    padding: 15px;
+    
+}
+.homecont1 a:hover {
+    background-color: #e0bfbf98;
+    color: rgb(0, 0, 0);
+    transition:1s;
+}
+
+#review{
+    background-color: #150846c5;
+    font-weight: 1000;
+    font-size: 40;
+    font-family: Arial;
+    margin: 10px;
+    text-align: center;
+    color: #ffffff;
+    border: 10px ridge #3700ff;
+    text-shadow: 1px 3px rgb(25, 0, 255);
+    outline: 10px dotted rgb(201, 204, 43);
+}
+
+.reviewsection{
+    background-color: #150846c5;
+    color: #ffffff;
+    font-family: Arial;
+    margin: 10px;
+    border: 10px ridge #3700ff;
+    text-shadow: 1px 3px rgb(25, 0, 255);
+    text-align: justify;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.customerreview{
+    background-color: #150846c5;
+    margin: 10px;
+    font-weight: 1000;
+    font-size: 40px;
+    font-family: Arial;
+    text-align: center;
+    color: #ffffff;
+    border: 10px ridge #3700ff;
+    text-shadow: 1px 3px rgb(25, 0, 255);
+    outline: 10px dotted rgb(201, 204, 43);
+}
+
+.reviewreview {
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent wrapping of review items */ 
+}
+
+.review-row {
+    display: inline-flex; /* Make review items display inline */
+    
+}
+
+.review-item {
+    text-align: center;
+    color: white;
+    margin-left: 0.5%; /* Adjust spacing between review items */
+    margin-right: 0.5%; /* Adjust spacing between review items */
+    background-color: #6b0202a2;
+    border-radius: 25px;
+    border: 10px ridge #9b0505;
+    outline: 5px dotted rgb(201, 204, 43);
+    flex-shrink: 0; /* Ensure review items don't shrink */
+    max-width: 30%;
+}
+
+.review-item img {
+    margin-top: 20px;
+    width: 20%;
+    height: 20%;
+    border-radius: 50%;
+    border: 10px ridge #3700ff;
+    outline: 5px dotted rgb(201, 204, 43);
+}
+
+.review-item {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 40%;
+    height: 100%;
+
+}
+
+.reviewer{
+    font-weight: 1000;
+    color: #ffffff;
+    font-size: 18px;
+    margin-top: 20px;
+    text-shadow: 1px 3px rgb(25, 0, 255);
+    width: 100%;
+    text-align: center;
+    padding-bottom: 5%;
+    outline: 5px dotted rgb(201, 204, 43);
+}
+
+.review-item .reviewer-name {
+    font-weight: 1000;
+    margin-top: 5px;
+    text-shadow: 1px 3px rgb(255, 0, 0);
+    font-size: 25px;
+    outline: 5px dotted rgb(201, 204, 43);
+}
+
+.footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    
+}
+
+.footertitle {
+    text-align: center;
+    font-size:50px;
+    font-weight: 1000;
+    color: white;
+    text-shadow: 2px 4px rgb(25, 0, 255);
+    font-family: Arial;
+    margin-top: -20px;
+}
+
+.hrfoot {
+    margin-top: -20px; /* Added 'px' unit */
+    width: 100%; /* Changed to full width */
+    height: 5px; /* Reduced height for a thinner line */
+    background-color: white;
+    border: none; /* Removed border */
+}
+
+.hrfoot1 {
+    width: 100%; /* Changed to full width */
+    height: 5px; /* Reduced height for a thinner line */
+    background-color: white;
+    border: none; /* Removed border */
+}
+
+.main1 ul{
+    overflow: hidden;
+    list-style: none;
+    text-align: center;
+    margin: auto;
+    padding: 25px;
+    font-size: 25;
+    text-shadow: 1px 3px rgb(255, 0, 0);  
+    font-weight: 1000;
+    font-family: Arial;
+}
+.main1 li {    
+    display: inline-block;
+    padding: 10;
+    
+}
+
+.main1 a{
+    text-decoration: none;
+    color: #fff;
+    width: 100px;
+    padding: 15px 20px;
+    
+    
+}
+.main1 a:hover {
+    background-color: #ffee009d;
+    color: rgb(0, 0, 0);
+    transition:1s;
+}
+
+.footer-contact {
+    text-align: center;
+}
+
+.footer-logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.footer-logo a {
+    display: inline-block;
+    text-align: center;
+}
+
+.footer-logo img {
+    height: 100px;
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+.cont1 {
+    background-color: #150846c5;
+    font-weight: 1000;
+    font-size: 20px;
+    text-align: center;
+    color: #ffffff;
+    font-family: Arial;
+    padding: 10px;
+    margin: 10px;
+    border: 10px ridge #3700ff;
+    text-shadow: 1px 3px rgb(25, 0, 255);
+    margin-left: 100px; /* Added 'px' unit */
+    margin-right: 100px; /* Added 'px' unit */
+}
+
+.foot {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 1000;
+    color: white;
+    text-shadow: 2px 4px rgb(25, 0, 255);
+    font-family: Arial;
+    margin-top: -10px; /* Added 'px' unit */
+}
+
+.Messageus{
+    font-size: 20px;
+    font-family: Arial;
+    font-weight: 1000;
+    text-shadow: 2px 4px rgb(255, 0, 0);
+    margin-top: -70px; /* Added 'px' unit */
+}
+
+.socacc {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 1000;
+    color: white;
+    text-shadow: 2px 4px rgb(25, 0, 255);
+    font-family: Arial;
+    margin-top: -10px; /* Added 'px' unit */
+}
+
+.socmed {
+    margin-top: -30px; /* Added 'px' unit */
+}
+
+.socmed img {
+    height: 55px;
+    width: 55px;
+    max-width: fit-content;
+}
+
+.socmed ul {
+    overflow: hidden;
+    list-style: none;
+    background-color: #ff000073;
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+    border: 10px ridge rgb(0, 26, 255);
+    text-shadow: 1px 3px rgb(255, 0, 0);
+    border-radius: 100px;
+    font-family: Arial;
+    width: 300px;
+    outline: 5px dotted rgb(201, 204, 43);
+}
+
+.socmed li {
+    display: inline-block;
+}
+
+.socmed a {
+    text-decoration: none;
+    color: #fff;
+    padding: 100px 20px;
+    transition: background-color 1s;
+}
+
+.socmed a:hover {
+    background-color: #00d9ff9d;
+}
+
+.hrfoot {
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    border: none;
+}
+
+.hrfoot1 {
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    border: none;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 320px) {
+    /* Styles for iPhone SE */
+    .main ul {
+        font-size: 14px;
+    }
+
+    .main a {
+        padding: 10px;
+    }
+
+    .about1, .reviewsection {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    /* Styles for iPhone XR */
+    .main ul {
+        font-size: 16px;
+    }
+
+    .main a {
+        padding: 12px;
+    }
+
+    .about1, .reviewsection {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* Adjust styles for smaller screens */
+    .main ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main li {
+        margin-bottom: 10px;
+    }
+
+    .scroll-container {
+        overflow-x: auto;
+        white-space: nowrap;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+
+    .scroll-container .menu-item {
+        margin: 10px;
+    }
+
+    .scroll-container img {
+        width: 100%;
+        height: auto;
+    }
+
+    .about1, .reviewsection {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .footer-logo img {
+        max-width: 100%;
+    }
+}

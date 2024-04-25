@@ -1,0 +1,384 @@
+/* General Styles */
+html {
+    text-align: center;
+    font-family: Arial;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(to bottom, rgba(29, 1, 1, 0.856) 50%, rgba(22, 0, 0, 0.658) 100%), url(1BG.jpg) no-repeat fixed center;
+    height: 100%;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+
+}
+
+/* Navigation Styles */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #cc242475;
+    border: 10px ridge rgb(255, 0, 0);
+    outline: 10px dotted rgb(201, 204, 43);
+    padding: 10px;
+}
+
+.nav .logo1 {
+    height: 80px;
+    width: auto;
+    padding: 10px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+}
+
+.titletext {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 1000;
+    color: #ffffff;
+    font-family: Arial;
+    text-shadow: 1px 5px rgba(255, 0, 0, 0.849);
+    flex-grow: 1;
+}
+
+/* Main Content Styles */
+.main {
+    background-color: #37000094;
+    width: auto;
+    border: 10px ridge rgb(255, 0, 0);
+    margin: 0 10px; /* Adjusted margin size */
+    outline: 8px dotted #e5ff00;
+}
+
+.main ul {
+    overflow: hidden;
+    list-style: none;
+    text-align: center;
+    margin: auto;
+    padding: 15px;
+    font-size: 18px;
+    text-shadow: 1px 3px rgb(255, 0, 0);
+    font-weight: 1000;
+    font-family: Arial;
+}
+
+.main li {
+    display: inline-block;
+}
+
+.main a {
+    text-decoration: none;
+    color: #fff;
+    width: 100px;
+    padding: 15px 20px;
+}
+
+.main a:hover {
+    background-color: #ffee009d;
+    color: rgb(0, 0, 0);
+    transition: 1s;
+}
+
+/* Media Queries */
+/* Default styles */
+
+/* Adjustments for screens wider than a certain width */
+@media only screen and (min-width: 600px) {
+    .nav {
+        flex-direction: row; /* Revert to row layout for navigation on wider screens */
+    }
+
+    .title {
+        margin-bottom: 20px; /* Increase margin for title */
+    }
+
+    .main {
+        margin: 20px; /* Increase margin for main content */
+    }
+
+    body {
+        margin: 20px; /* Increase margin for body */
+    }
+
+/* Styles for smaller screens */
+@media only screen and (max-width: 599px) {
+    .nav {
+        flex-direction: column; /* Stack navigation items vertically for smaller screens */
+    }
+
+    .title {
+        margin-bottom: 10px; /* Decrease margin for title */
+    }
+
+    .main {
+        margin: 10px; /* Decrease margin for main content */
+    }
+
+    body {
+        margin: 10px; /* Decrease margin for body */
+    }
+}
+}
+
+#tables {
+    font-family: Arial;
+    background-color: #ff000031;
+    border: 10px ridge #ff0000;
+    padding: 10px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.scrollable {
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.available-text {
+    font-size: 24px;
+    font-weight: 1000;
+    font-family: Arial;
+    text-align: center; 
+    text-shadow: 1px 4px rgb(255, 0, 0);
+    background-color: #150846;
+    color: yellow;
+    width: 30%; 
+    padding: 10px;
+    margin: auto; 
+    border-radius: 50px;
+    border: 5px ridge #eeff00;
+    outline: 5px dotted rgb(201, 204, 43); 
+    margin-bottom: 10px;
+}
+
+.scrollable .table-item {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px; /* Adjust spacing between items */
+}
+
+.table-item{
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+.scrollable .image-container {
+    position: relative; 
+    margin-bottom: 10px; /* Adjust space between image and title */
+}
+
+.scrollable .image-container img {
+    width: 300px;
+    height: 300px;
+    outline: 5px dotted rgb(25, 0, 255);
+    padding: 1px;
+    transition: transform .2s;
+}
+
+.scrollable .image-container img:hover {
+    transform: scale(1.1); /*zoom*/
+}
+
+.scrollable .table-title {
+    margin-top: 5px;
+    outline: 5px dotted rgb(201, 204, 43);
+    display: flex;
+    background-color: rgb(5, 10, 73);
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 50px;
+    border: 5px ridge #eeff00;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fbff00;
+    text-align: center;
+    text-shadow: 1px 2px rgb(255, 0, 0);
+    padding: 10px;
+}
+
+.scrollable .table-price {
+    margin-top: 5px;
+    outline: 5px dotted rgb(201, 204, 43);
+    display: flex;
+    background-color: rgb(5, 10, 73);
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 50px;
+    border: 5px ridge #eeff00;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fbff00;
+    text-align: center;
+    text-shadow: 1px 2px rgb(255, 0, 0);
+    padding: 10px;
+}
+/* Form Styles */
+.backgroundform {
+    background-color: #15155a8e;
+    padding: 2px;
+    margin-left: 20%;
+    margin-right: 20%; /* Adjusted margin size */
+    border-radius: 4px;
+    border: 10px ridge rgb(255, 0, 0);
+}
+
+.fill_up {
+    margin-top: 10px; /* Adjusted margin-top */
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%; /* Adjusted width */
+    outline: 5px dotted rgb(201, 204, 43);
+    background-color: rgb(5, 10, 73);
+    border-radius: 50px;
+    border: 5px ridge #eeff00;
+    font-size: 20px;
+    font-weight: 1000;
+    color: #fbff00;
+    text-align: center;
+    text-shadow: 1px 2px rgb(255, 0, 0);
+    padding: 10px;
+}
+
+.client {
+    margin-bottom: 15px; /* Adjust margin bottom */
+    margin-left: auto; /* Align to the left */
+    margin-right: auto; /* Align to the right */
+    width: 80%; /* Set the width */
+}
+
+.client label {
+    display: block;
+    margin-bottom: 5px; /* Adjust margin bottom */
+    font-size: 20px;
+    font-weight: 1000;
+    color: white;
+    text-align: left;
+    text-shadow: 1px 2px rgb(25, 0, 255);
+}
+
+.inputt {
+    width: calc(100%); /* Adjust width */
+    padding: 8px;
+    box-sizing: border-box;
+    border: 2px solid #2142ad;
+    border-radius: 10px;
+}
+
+.reserve {
+    margin-top: 10px; /* Adjusted margin-top */
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%; /* Adjusted width */
+    outline: 5px dotted rgb(201, 204, 43);
+    background-color: rgb(5, 10, 73);
+    border-radius: 50px;
+    border: 5px ridge #eeff00;
+    font-size: 25px;
+    font-weight: 1000;
+    color: #fbff00;
+    text-align: center;
+    text-shadow: 1px 2px rgb(255, 0, 0);
+    padding: 10px;
+}
+
+.reserve_table, .comments {
+    margin-bottom: 10px; /* Adjust margin bottom */
+    margin-left: auto; /* Align to the left */
+    margin-right: auto; /* Align to the right */
+    width: 80%; /* Set the width */
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 1000;
+    color: white;
+    text-align: left;
+    text-shadow: 1px 2px rgb(25, 0, 255);
+}
+
+.reserve_table label, .comments label {
+    display: block;
+    margin-bottom: 5px; /* Adjust margin bottom */
+}
+
+.options_choose, .e_comments textarea {
+    width: 80%; /* Adjust width */
+    padding: 8px;
+    box-sizing: border-box;
+    border: 2px solid #2142ad;
+    border-radius: 10px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px; 
+}
+.submit, .reset {
+    border-radius: 25px;
+    padding: 10px;  
+    font-size: 12px;
+    font-weight: 1000;
+    margin-left: 5px;
+    margin-right: 5px;
+    
+}
+
+.submit {
+    background-color: rgb(58, 230, 58);
+    border: 10px ridge rgb(46, 185, 46);
+    
+}
+
+.submit:hover {
+    background-color: rgb(26, 110, 0);
+    opacity: 2.0s;
+    transition: 0.5s;
+}
+
+.reset {
+    background-color: rgb(230, 58, 58);
+    border: 10px ridge rgb(179, 3, 3);
+}
+
+.reset:hover {
+    background-color: rgb(128, 3, 3);
+    opacity: 2.0s;
+    transition: 0.5s;
+}
+
+.homeabout1 ul {
+    overflow: hidden;
+    list-style: none;
+    background-color: #ff000073;
+    text-align: center;
+    margin: auto;
+    padding: 15px;
+    border: 10px ridge rgb(0, 0, 0);
+    font-size: 20;
+    border-radius: 25px;
+    text-shadow: 1px 3px rgb(255, 0, 0); 
+    outline: 5px dotted rgb(201, 204, 43); 
+    font-weight: 1000;
+    font-family: Arial;
+    width: 250px;
+}
+
+.homeabout1 a {
+    text-decoration: none;
+    color: #fff;
+    padding: 15px;
+}
+
+.homeabout1 a:hover {
+    background-color: #e0bfbf98;
+    color: rgb(0, 0, 0);
+    transition: 1s;
+}
