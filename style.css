@@ -90,6 +90,11 @@ body {
     transition: 1s;
 }
 
+.main a:hover {
+    background-color: #ffee009d;
+    color: rgb(0, 0, 0);
+    transition: 1s;
+}
 
 .tagl{
     background-color: #5e15158f;
@@ -563,11 +568,6 @@ body {
 
     .main li {
         margin-bottom: 10px;
-    }
-
-    /* Adjust font sizes */
-    .titletext {
-        font-size: 25px;
     }
 
     /* Make images responsive */
