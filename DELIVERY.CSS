@@ -256,6 +256,14 @@ body {
     text-shadow: 1px 2px rgb(25, 0, 255);
 }
 
+.inputt {
+    width: calc(50%); /* Adjust width */
+    padding: 8px;
+    box-sizing: border-box;
+    border: 2px solid #2142ad;
+    border-radius: 10px;
+}
+
 .reserve_table label, .comments label {
     display: block;
     margin-bottom: 5px; /* Adjust margin bottom */
