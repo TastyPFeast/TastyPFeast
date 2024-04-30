@@ -141,15 +141,7 @@ body {
 
 .scroll-container img {
     padding:  1px;
-    height: 400;
-    width: 400;
     transition: transform .2s;
-}
-
-.scroll-container img:hover {
-    width: 400px;
-    height: 400px;
-    overflow: visible;
 }
 
 .menu-item {
@@ -165,18 +157,17 @@ body {
 }
 
 .image-container img {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     padding: 1px;
     transition: transform .2s;
     outline: 5px dotted rgb(25, 0, 255); 
 }
 
 .image-container img:hover {
-    width: 325px;
-    height: 325px;
+    transform: scale(1.2);
     color: rgb(0, 0, 0);
-    transition: .1s;
+    transition: .5s;
 }
 
 .menu-title {
