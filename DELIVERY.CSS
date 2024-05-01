@@ -257,7 +257,7 @@ body {
 }
 
 .inputt {
-    width: calc(50%); /* Adjust width */
+    width: calc(100%); /* Adjust width */
     padding: 8px;
     box-sizing: border-box;
     border: 2px solid #2142ad;
